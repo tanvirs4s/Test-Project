@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --presets babel-preset-es2015 --out-dir build --copy-files",
-    "test": "npm run build && wdio"
+    "test": "npm run build && wdio",
+    "posttest": "allure generate allure-results --clean -o allure-report"
   },
   "keywords": [],
   "author": "",
